@@ -1,0 +1,50 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "pc": [
+        "pc",
+        "EJdGq",
+        "module",
+        2
+    ],
+    "regfile": [
+        "regfile",
+        "Nxspn",
+        "module",
+        3
+    ],
+    "alu": [
+        "alu",
+        "C26kq",
+        "module",
+        4
+    ],
+    "control_unit": [
+        "control_unit",
+        "PDti6",
+        "module",
+        5
+    ],
+    "imm_gen": [
+        "imm_gen",
+        "aCwQk",
+        "module",
+        6
+    ],
+    "branch_comp": [
+        "branch_comp",
+        "Ajvht",
+        "module",
+        7
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        8
+    ]
+}

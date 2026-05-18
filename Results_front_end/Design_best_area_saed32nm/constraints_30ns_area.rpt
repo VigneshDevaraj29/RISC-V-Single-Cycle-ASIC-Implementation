@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:47:15 2026
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   riscv_core_synth             0.00       21775.32       -21775.32 (VIOLATED)
+
+
+1

@@ -1,0 +1,677 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:49:16 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: imem_rdata[21]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[21] (in)                      0.00       1.00 f
+  u_regfile/rs2[1] (regfile)               0.00       1.00 f
+  u_regfile/U80/Y (INVX0_RVT)              0.09       1.09 r
+  u_regfile/U194/Y (NOR2X2_RVT)            0.09       1.18 f
+  u_regfile/U164/Y (AND2X1_RVT)            0.15       1.33 f
+  u_regfile/U28/Y (NBUFFX2_RVT)            0.10       1.43 f
+  u_regfile/U602/Y (AO22X1_RVT)            0.10       1.53 f
+  u_regfile/U603/Y (NOR4X1_RVT)            0.10       1.63 r
+  u_regfile/U217/Y (NAND4X0_RVT)           0.12       1.75 f
+  u_regfile/read_data2[1] (regfile)        0.00       1.75 f
+  U463/Y (INVX0_RVT)                       0.10       1.85 r
+  U1110/Y (AND2X1_RVT)                     0.04       1.89 r
+  U371/Y (NOR2X0_RVT)                      0.07       1.96 f
+  U1112/Y (XOR2X1_RVT)                     0.19       2.15 f
+  U368/CO (FADDX1_RVT)                     0.25       2.40 f
+  U432/Y (AO22X2_RVT)                      0.10       2.51 f
+  U400/Y (AO22X1_RVT)                      0.11       2.61 f
+  U389/Y (AO22X2_RVT)                      0.10       2.72 f
+  U406/Y (AOI21X2_RVT)                     0.11       2.83 r
+  U415/Y (OA21X2_RVT)                      0.06       2.89 r
+  U385/Y (AO22X1_RVT)                      0.05       2.94 r
+  U384/Y (NOR2X2_RVT)                      0.06       3.01 f
+  U403/Y (NOR2X2_RVT)                      0.11       3.11 r
+  U530/Y (OA22X1_RVT)                      0.05       3.16 r
+  U408/Y (NOR2X2_RVT)                      0.07       3.23 f
+  U390/Y (OA21X2_RVT)                      0.11       3.34 f
+  U884/Y (AO21X1_RVT)                      0.11       3.46 f
+  U387/Y (IBUFFX16_RVT)                    0.04       3.49 r
+  U388/Y (NBUFFX2_RVT)                     0.04       3.53 r
+  U548/Y (OAI21X1_RVT)                     0.10       3.63 f
+  U404/Y (AO21X2_RVT)                      0.11       3.74 f
+  U614/Y (XNOR2X1_RVT)                     0.18       3.91 f
+  U916/Y (AO22X1_RVT)                      0.09       4.00 f
+  dmem_addr[29] (out)                      0.00       4.00 f
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: imem_rdata[21]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[21] (in)                      0.00       1.00 f
+  u_regfile/rs2[1] (regfile)               0.00       1.00 f
+  u_regfile/U80/Y (INVX0_RVT)              0.09       1.09 r
+  u_regfile/U194/Y (NOR2X2_RVT)            0.09       1.18 f
+  u_regfile/U164/Y (AND2X1_RVT)            0.15       1.33 f
+  u_regfile/U28/Y (NBUFFX2_RVT)            0.10       1.43 f
+  u_regfile/U602/Y (AO22X1_RVT)            0.10       1.53 f
+  u_regfile/U603/Y (NOR4X1_RVT)            0.10       1.63 r
+  u_regfile/U217/Y (NAND4X0_RVT)           0.12       1.75 f
+  u_regfile/read_data2[1] (regfile)        0.00       1.75 f
+  U463/Y (INVX0_RVT)                       0.10       1.85 r
+  U1110/Y (AND2X1_RVT)                     0.04       1.89 r
+  U371/Y (NOR2X0_RVT)                      0.07       1.96 f
+  U1112/Y (XOR2X1_RVT)                     0.19       2.15 f
+  U368/CO (FADDX1_RVT)                     0.25       2.40 f
+  U432/Y (AO22X2_RVT)                      0.10       2.51 f
+  U400/Y (AO22X1_RVT)                      0.11       2.61 f
+  U389/Y (AO22X2_RVT)                      0.10       2.72 f
+  U406/Y (AOI21X2_RVT)                     0.11       2.83 r
+  U415/Y (OA21X2_RVT)                      0.06       2.89 r
+  U385/Y (AO22X1_RVT)                      0.05       2.94 r
+  U384/Y (NOR2X2_RVT)                      0.06       3.01 f
+  U403/Y (NOR2X2_RVT)                      0.11       3.11 r
+  U530/Y (OA22X1_RVT)                      0.05       3.16 r
+  U408/Y (NOR2X2_RVT)                      0.07       3.23 f
+  U390/Y (OA21X2_RVT)                      0.11       3.34 f
+  U884/Y (AO21X1_RVT)                      0.11       3.46 f
+  U387/Y (IBUFFX16_RVT)                    0.04       3.49 r
+  U388/Y (NBUFFX2_RVT)                     0.04       3.53 r
+  U447/Y (OA21X1_RVT)                      0.06       3.59 r
+  U511/Y (INVX1_RVT)                       0.04       3.63 f
+  U939/Y (AO21X1_RVT)                      0.11       3.74 f
+  U383/Y (XNOR2X1_RVT)                     0.18       3.91 f
+  U353/Y (AO22X1_RVT)                      0.09       4.00 f
+  dmem_addr[24] (out)                      0.00       4.00 f
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: imem_rdata[21]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[25]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[21] (in)                      0.00       1.00 f
+  u_regfile/rs2[1] (regfile)               0.00       1.00 f
+  u_regfile/U80/Y (INVX0_RVT)              0.09       1.09 r
+  u_regfile/U194/Y (NOR2X2_RVT)            0.09       1.18 f
+  u_regfile/U164/Y (AND2X1_RVT)            0.15       1.33 f
+  u_regfile/U28/Y (NBUFFX2_RVT)            0.10       1.43 f
+  u_regfile/U602/Y (AO22X1_RVT)            0.10       1.53 f
+  u_regfile/U603/Y (NOR4X1_RVT)            0.10       1.63 r
+  u_regfile/U217/Y (NAND4X0_RVT)           0.12       1.75 f
+  u_regfile/read_data2[1] (regfile)        0.00       1.75 f
+  U463/Y (INVX0_RVT)                       0.10       1.85 r
+  U1110/Y (AND2X1_RVT)                     0.04       1.89 r
+  U371/Y (NOR2X0_RVT)                      0.07       1.96 f
+  U1112/Y (XOR2X1_RVT)                     0.19       2.15 f
+  U368/CO (FADDX1_RVT)                     0.25       2.40 f
+  U432/Y (AO22X2_RVT)                      0.10       2.51 f
+  U400/Y (AO22X1_RVT)                      0.11       2.61 f
+  U389/Y (AO22X2_RVT)                      0.10       2.72 f
+  U406/Y (AOI21X2_RVT)                     0.11       2.83 r
+  U415/Y (OA21X2_RVT)                      0.06       2.89 r
+  U385/Y (AO22X1_RVT)                      0.05       2.94 r
+  U384/Y (NOR2X2_RVT)                      0.06       3.01 f
+  U403/Y (NOR2X2_RVT)                      0.11       3.11 r
+  U530/Y (OA22X1_RVT)                      0.05       3.16 r
+  U408/Y (NOR2X2_RVT)                      0.07       3.23 f
+  U390/Y (OA21X2_RVT)                      0.11       3.34 f
+  U884/Y (AO21X1_RVT)                      0.11       3.46 f
+  U387/Y (IBUFFX16_RVT)                    0.04       3.49 r
+  U388/Y (NBUFFX2_RVT)                     0.04       3.53 r
+  U447/Y (OA21X1_RVT)                      0.06       3.59 r
+  U511/Y (INVX1_RVT)                       0.04       3.63 f
+  U911/Y (AO21X1_RVT)                      0.11       3.74 f
+  U612/Y (XNOR2X1_RVT)                     0.18       3.91 f
+  U887/Y (AO22X1_RVT)                      0.09       4.00 f
+  dmem_addr[25] (out)                      0.00       4.00 f
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: imem_rdata[16]
+              (input port clocked by clk)
+  Endpoint: u_pc/pc_out_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[16] (in)                      0.00       1.00 f
+  u_regfile/rs1[1] (regfile)               0.00       1.00 f
+  u_regfile/U353/Y (NAND2X0_RVT)           0.09       1.09 r
+  u_regfile/U79/Y (INVX1_RVT)              0.09       1.18 f
+  u_regfile/U11/Y (AND2X4_RVT)             0.23       1.41 f
+  u_regfile/U723/Y (AO22X1_RVT)            0.30       1.72 f
+  u_regfile/U725/Y (NOR4X1_RVT)            0.11       1.82 r
+  u_regfile/U731/Y (NAND4X0_RVT)           0.17       1.99 f
+  u_regfile/read_data1[6] (regfile)        0.00       1.99 f
+  U382/Y (INVX0_RVT)                       0.13       2.13 r
+  U1018/Y (OA221X1_RVT)                    0.07       2.20 r
+  U1019/Y (NAND4X0_RVT)                    0.11       2.30 f
+  U879/Y (NOR3X0_RVT)                      0.13       2.43 r
+  U876/Y (NOR2X0_RVT)                      0.06       2.49 f
+  U871/Y (OR3X2_RVT)                       0.10       2.59 f
+  U460/Y (INVX0_RVT)                       0.08       2.67 r
+  U425/Y (NOR2X2_RVT)                      0.07       2.74 f
+  U923/Y (AND2X1_RVT)                      0.12       2.86 f
+  U431/CO (FADDX2_RVT)                     0.20       3.06 f
+  U411/Y (AO22X2_RVT)                      0.10       3.17 f
+  U366/Y (AO21X1_RVT)                      0.12       3.28 f
+  U365/Y (AND3X2_RVT)                      0.11       3.39 f
+  U531/Y (AO21X1_RVT)                      0.10       3.49 f
+  U427/Y (IBUFFX4_RVT)                     0.05       3.54 r
+  U428/Y (OAI21X2_RVT)                     0.08       3.62 f
+  U414/Y (AO22X2_RVT)                      0.10       3.72 f
+  U362/Y (OAI21X1_RVT)                     0.12       3.84 r
+  U394/Y (OR3X1_RVT)                       0.05       3.89 r
+  U865/Y (AND2X1_RVT)                      0.04       3.93 r
+  U395/Y (NOR2X2_RVT)                      0.06       3.99 f
+  U412/Y (OR2X2_RVT)                       0.10       4.09 f
+  U421/Y (AO21X2_RVT)                      0.11       4.20 f
+  U420/Y (AO21X2_RVT)                      0.11       4.31 f
+  U391/Y (AOI21X2_RVT)                     0.12       4.43 r
+  U867/Y (AO22X1_RVT)                      0.06       4.48 r
+  U423/Y (AOI21X2_RVT)                     0.06       4.54 f
+  U422/Y (OR2X2_RVT)                       0.11       4.65 f
+  U396/Y (AO22X2_RVT)                      0.10       4.75 f
+  U601/Y (XNOR2X1_RVT)                     0.18       4.92 f
+  u_pc/pc_out_reg[31]/D (DFFARX1_RVT)      0.05       4.97 f
+  data arrival time                                   4.97
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  u_pc/pc_out_reg[31]/CLK (DFFARX1_RVT)
+                                           0.00       5.00 r
+  library setup time                      -0.03       4.97
+  data required time                                  4.97
+  -----------------------------------------------------------
+  data required time                                  4.97
+  data arrival time                                  -4.97
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: imem_rdata[24]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[27]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  imem_rdata[24] (in)                      0.00       1.00 r
+  u_regfile/rs2[4] (regfile)               0.00       1.00 r
+  u_regfile/U82/Y (INVX1_RVT)              0.05       1.05 f
+  u_regfile/U56/Y (AND3X1_RVT)             0.13       1.17 f
+  u_regfile/U144/Y (AND2X1_RVT)            0.12       1.30 f
+  u_regfile/U43/Y (NBUFFX8_RVT)            0.08       1.38 f
+  u_regfile/U1982/Y (AO22X1_RVT)           0.27       1.65 f
+  u_regfile/U1985/Y (NOR4X1_RVT)           0.11       1.76 r
+  u_regfile/U180/Y (NAND4X0_RVT)           0.12       1.88 f
+  u_regfile/read_data2[8] (regfile)        0.00       1.88 f
+  U429/Y (AO21X2_RVT)                      0.16       2.03 f
+  U861/Y (XOR2X1_RVT)                      0.18       2.21 r
+  U373/Y (NOR2X0_RVT)                      0.08       2.29 f
+  U534/Y (INVX1_RVT)                       0.10       2.39 r
+  U859/Y (AND2X1_RVT)                      0.04       2.43 r
+  U908/Y (AND2X1_RVT)                      0.04       2.47 r
+  U501/Y (INVX0_RVT)                       0.04       2.51 f
+  U692/Y (OR2X1_RVT)                       0.10       2.60 f
+  U415/Y (OA21X2_RVT)                      0.11       2.71 f
+  U385/Y (AO22X1_RVT)                      0.12       2.83 f
+  U384/Y (NOR2X2_RVT)                      0.11       2.95 r
+  U403/Y (NOR2X2_RVT)                      0.07       3.02 f
+  U530/Y (OA22X1_RVT)                      0.12       3.14 f
+  U408/Y (NOR2X2_RVT)                      0.12       3.26 r
+  U390/Y (OA21X2_RVT)                      0.06       3.32 r
+  U884/Y (AO21X1_RVT)                      0.06       3.38 r
+  U387/Y (IBUFFX16_RVT)                    0.06       3.44 f
+  U388/Y (NBUFFX2_RVT)                     0.09       3.53 f
+  U548/Y (OAI21X1_RVT)                     0.13       3.66 r
+  U1232/Y (INVX1_RVT)                      0.05       3.71 f
+  U986/Y (XNOR2X1_RVT)                     0.18       3.88 f
+  U1236/Y (AO22X1_RVT)                     0.09       3.97 f
+  dmem_addr[27] (out)                      0.00       3.97 f
+  data arrival time                                   3.97
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -3.97
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: imem_rdata[21]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[21] (in)                      0.00       1.00 f
+  u_regfile/rs2[1] (regfile)               0.00       1.00 f
+  u_regfile/U80/Y (INVX0_RVT)              0.09       1.09 r
+  u_regfile/U194/Y (NOR2X2_RVT)            0.09       1.18 f
+  u_regfile/U164/Y (AND2X1_RVT)            0.15       1.33 f
+  u_regfile/U28/Y (NBUFFX2_RVT)            0.10       1.43 f
+  u_regfile/U602/Y (AO22X1_RVT)            0.10       1.53 f
+  u_regfile/U603/Y (NOR4X1_RVT)            0.10       1.63 r
+  u_regfile/U217/Y (NAND4X0_RVT)           0.12       1.75 f
+  u_regfile/read_data2[1] (regfile)        0.00       1.75 f
+  U463/Y (INVX0_RVT)                       0.10       1.85 r
+  U1110/Y (AND2X1_RVT)                     0.04       1.89 r
+  U371/Y (NOR2X0_RVT)                      0.07       1.96 f
+  U1112/Y (XOR2X1_RVT)                     0.19       2.15 f
+  U368/CO (FADDX1_RVT)                     0.25       2.40 f
+  U432/Y (AO22X2_RVT)                      0.10       2.51 f
+  U400/Y (AO22X1_RVT)                      0.11       2.61 f
+  U389/Y (AO22X2_RVT)                      0.10       2.72 f
+  U406/Y (AOI21X2_RVT)                     0.11       2.83 r
+  U415/Y (OA21X2_RVT)                      0.06       2.89 r
+  U385/Y (AO22X1_RVT)                      0.05       2.94 r
+  U384/Y (NOR2X2_RVT)                      0.06       3.01 f
+  U403/Y (NOR2X2_RVT)                      0.11       3.11 r
+  U530/Y (OA22X1_RVT)                      0.05       3.16 r
+  U408/Y (NOR2X2_RVT)                      0.07       3.23 f
+  U390/Y (OA21X2_RVT)                      0.11       3.34 f
+  U884/Y (AO21X1_RVT)                      0.11       3.46 f
+  U359/Y (AO21X1_RVT)                      0.12       3.57 f
+  U930/Y (AO21X1_RVT)                      0.12       3.69 f
+  U617/Y (AOI22X1_RVT)                     0.11       3.80 r
+  U1161/Y (XNOR2X1_RVT)                    0.08       3.88 f
+  U1162/Y (AO22X1_RVT)                     0.09       3.97 f
+  dmem_addr[31] (out)                      0.00       3.97 f
+  data arrival time                                   3.97
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -3.97
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: imem_rdata[21]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[30]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[21] (in)                      0.00       1.00 f
+  u_regfile/rs2[1] (regfile)               0.00       1.00 f
+  u_regfile/U80/Y (INVX0_RVT)              0.09       1.09 r
+  u_regfile/U194/Y (NOR2X2_RVT)            0.09       1.18 f
+  u_regfile/U164/Y (AND2X1_RVT)            0.15       1.33 f
+  u_regfile/U28/Y (NBUFFX2_RVT)            0.10       1.43 f
+  u_regfile/U602/Y (AO22X1_RVT)            0.10       1.53 f
+  u_regfile/U603/Y (NOR4X1_RVT)            0.10       1.63 r
+  u_regfile/U217/Y (NAND4X0_RVT)           0.12       1.75 f
+  u_regfile/read_data2[1] (regfile)        0.00       1.75 f
+  U463/Y (INVX0_RVT)                       0.10       1.85 r
+  U1110/Y (AND2X1_RVT)                     0.04       1.89 r
+  U371/Y (NOR2X0_RVT)                      0.07       1.96 f
+  U1112/Y (XOR2X1_RVT)                     0.19       2.15 f
+  U368/CO (FADDX1_RVT)                     0.25       2.40 f
+  U432/Y (AO22X2_RVT)                      0.10       2.51 f
+  U400/Y (AO22X1_RVT)                      0.11       2.61 f
+  U389/Y (AO22X2_RVT)                      0.10       2.72 f
+  U406/Y (AOI21X2_RVT)                     0.11       2.83 r
+  U415/Y (OA21X2_RVT)                      0.06       2.89 r
+  U385/Y (AO22X1_RVT)                      0.05       2.94 r
+  U384/Y (NOR2X2_RVT)                      0.06       3.01 f
+  U403/Y (NOR2X2_RVT)                      0.11       3.11 r
+  U530/Y (OA22X1_RVT)                      0.05       3.16 r
+  U408/Y (NOR2X2_RVT)                      0.07       3.23 f
+  U390/Y (OA21X2_RVT)                      0.11       3.34 f
+  U884/Y (AO21X1_RVT)                      0.11       3.46 f
+  U359/Y (AO21X1_RVT)                      0.12       3.57 f
+  U930/Y (AO21X1_RVT)                      0.12       3.69 f
+  U1123/Y (INVX1_RVT)                      0.10       3.79 r
+  U1125/Y (XNOR2X1_RVT)                    0.08       3.88 f
+  U1126/Y (AO22X1_RVT)                     0.09       3.96 f
+  dmem_addr[30] (out)                      0.00       3.96 f
+  data arrival time                                   3.96
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -3.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: imem_rdata[24]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  imem_rdata[24] (in)                      0.00       1.00 r
+  u_regfile/rs2[4] (regfile)               0.00       1.00 r
+  u_regfile/U82/Y (INVX1_RVT)              0.05       1.05 f
+  u_regfile/U56/Y (AND3X1_RVT)             0.13       1.17 f
+  u_regfile/U144/Y (AND2X1_RVT)            0.12       1.30 f
+  u_regfile/U43/Y (NBUFFX8_RVT)            0.08       1.38 f
+  u_regfile/U1982/Y (AO22X1_RVT)           0.27       1.65 f
+  u_regfile/U1985/Y (NOR4X1_RVT)           0.11       1.76 r
+  u_regfile/U180/Y (NAND4X0_RVT)           0.12       1.88 f
+  u_regfile/read_data2[8] (regfile)        0.00       1.88 f
+  U429/Y (AO21X2_RVT)                      0.16       2.03 f
+  U861/Y (XOR2X1_RVT)                      0.18       2.21 r
+  U373/Y (NOR2X0_RVT)                      0.08       2.29 f
+  U534/Y (INVX1_RVT)                       0.10       2.39 r
+  U859/Y (AND2X1_RVT)                      0.04       2.43 r
+  U908/Y (AND2X1_RVT)                      0.04       2.47 r
+  U501/Y (INVX0_RVT)                       0.04       2.51 f
+  U692/Y (OR2X1_RVT)                       0.10       2.60 f
+  U415/Y (OA21X2_RVT)                      0.11       2.71 f
+  U385/Y (AO22X1_RVT)                      0.12       2.83 f
+  U384/Y (NOR2X2_RVT)                      0.11       2.95 r
+  U403/Y (NOR2X2_RVT)                      0.07       3.02 f
+  U530/Y (OA22X1_RVT)                      0.12       3.14 f
+  U408/Y (NOR2X2_RVT)                      0.12       3.26 r
+  U390/Y (OA21X2_RVT)                      0.06       3.32 r
+  U884/Y (AO21X1_RVT)                      0.06       3.38 r
+  U387/Y (IBUFFX16_RVT)                    0.06       3.44 f
+  U388/Y (NBUFFX2_RVT)                     0.09       3.53 f
+  U447/Y (OA21X1_RVT)                      0.14       3.67 f
+  U611/Y (XNOR2X1_RVT)                     0.19       3.86 f
+  U1214/Y (AO22X1_RVT)                     0.09       3.96 f
+  dmem_addr[23] (out)                      0.00       3.96 f
+  data arrival time                                   3.96
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                   -1.00       4.00
+  data required time                                  4.00
+  -----------------------------------------------------------
+  data required time                                  4.00
+  data arrival time                                  -3.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: imem_rdata[16]
+              (input port clocked by clk)
+  Endpoint: u_pc/pc_out_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[16] (in)                      0.00       1.00 f
+  u_regfile/rs1[1] (regfile)               0.00       1.00 f
+  u_regfile/U353/Y (NAND2X0_RVT)           0.09       1.09 r
+  u_regfile/U79/Y (INVX1_RVT)              0.09       1.18 f
+  u_regfile/U11/Y (AND2X4_RVT)             0.23       1.41 f
+  u_regfile/U723/Y (AO22X1_RVT)            0.30       1.72 f
+  u_regfile/U725/Y (NOR4X1_RVT)            0.11       1.82 r
+  u_regfile/U731/Y (NAND4X0_RVT)           0.17       1.99 f
+  u_regfile/read_data1[6] (regfile)        0.00       1.99 f
+  U382/Y (INVX0_RVT)                       0.13       2.13 r
+  U1018/Y (OA221X1_RVT)                    0.07       2.20 r
+  U1019/Y (NAND4X0_RVT)                    0.11       2.30 f
+  U879/Y (NOR3X0_RVT)                      0.13       2.43 r
+  U876/Y (NOR2X0_RVT)                      0.06       2.49 f
+  U871/Y (OR3X2_RVT)                       0.10       2.59 f
+  U460/Y (INVX0_RVT)                       0.08       2.67 r
+  U425/Y (NOR2X2_RVT)                      0.07       2.74 f
+  U923/Y (AND2X1_RVT)                      0.12       2.86 f
+  U431/CO (FADDX2_RVT)                     0.20       3.06 f
+  U411/Y (AO22X2_RVT)                      0.10       3.17 f
+  U366/Y (AO21X1_RVT)                      0.12       3.28 f
+  U365/Y (AND3X2_RVT)                      0.11       3.39 f
+  U531/Y (AO21X1_RVT)                      0.10       3.49 f
+  U427/Y (IBUFFX4_RVT)                     0.05       3.54 r
+  U428/Y (OAI21X2_RVT)                     0.08       3.62 f
+  U414/Y (AO22X2_RVT)                      0.10       3.72 f
+  U362/Y (OAI21X1_RVT)                     0.12       3.84 r
+  U394/Y (OR3X1_RVT)                       0.05       3.89 r
+  U865/Y (AND2X1_RVT)                      0.04       3.93 r
+  U395/Y (NOR2X2_RVT)                      0.06       3.99 f
+  U412/Y (OR2X2_RVT)                       0.10       4.09 f
+  U421/Y (AO21X2_RVT)                      0.11       4.20 f
+  U420/Y (AO21X2_RVT)                      0.11       4.31 f
+  U526/Y (INVX1_RVT)                       0.10       4.41 r
+  U872/Y (OR2X1_RVT)                       0.04       4.46 r
+  U510/Y (INVX0_RVT)                       0.04       4.49 f
+  U920/Y (AND2X1_RVT)                      0.09       4.59 f
+  U602/Y (OR3X2_RVT)                       0.11       4.69 f
+  U1137/Y (XNOR2X1_RVT)                    0.18       4.87 f
+  u_pc/pc_out_reg[23]/D (DFFARX1_RVT)      0.05       4.92 f
+  data arrival time                                   4.92
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  u_pc/pc_out_reg[23]/CLK (DFFARX1_RVT)
+                                           0.00       5.00 r
+  library setup time                      -0.03       4.97
+  data required time                                  4.97
+  -----------------------------------------------------------
+  data required time                                  4.97
+  data arrival time                                  -4.92
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: imem_rdata[16]
+              (input port clocked by clk)
+  Endpoint: u_pc/pc_out_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   35000                 saed32rvt_tt1p05v25c
+  regfile            16000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[16] (in)                      0.00       1.00 f
+  u_regfile/rs1[1] (regfile)               0.00       1.00 f
+  u_regfile/U353/Y (NAND2X0_RVT)           0.09       1.09 r
+  u_regfile/U79/Y (INVX1_RVT)              0.09       1.18 f
+  u_regfile/U11/Y (AND2X4_RVT)             0.23       1.41 f
+  u_regfile/U723/Y (AO22X1_RVT)            0.30       1.72 f
+  u_regfile/U725/Y (NOR4X1_RVT)            0.11       1.82 r
+  u_regfile/U731/Y (NAND4X0_RVT)           0.17       1.99 f
+  u_regfile/read_data1[6] (regfile)        0.00       1.99 f
+  U382/Y (INVX0_RVT)                       0.13       2.13 r
+  U1018/Y (OA221X1_RVT)                    0.07       2.20 r
+  U1019/Y (NAND4X0_RVT)                    0.11       2.30 f
+  U879/Y (NOR3X0_RVT)                      0.13       2.43 r
+  U876/Y (NOR2X0_RVT)                      0.06       2.49 f
+  U871/Y (OR3X2_RVT)                       0.10       2.59 f
+  U460/Y (INVX0_RVT)                       0.08       2.67 r
+  U425/Y (NOR2X2_RVT)                      0.07       2.74 f
+  U923/Y (AND2X1_RVT)                      0.12       2.86 f
+  U431/CO (FADDX2_RVT)                     0.20       3.06 f
+  U411/Y (AO22X2_RVT)                      0.10       3.17 f
+  U366/Y (AO21X1_RVT)                      0.12       3.28 f
+  U365/Y (AND3X2_RVT)                      0.11       3.39 f
+  U531/Y (AO21X1_RVT)                      0.10       3.49 f
+  U427/Y (IBUFFX4_RVT)                     0.05       3.54 r
+  U428/Y (OAI21X2_RVT)                     0.08       3.62 f
+  U414/Y (AO22X2_RVT)                      0.10       3.72 f
+  U362/Y (OAI21X1_RVT)                     0.12       3.84 r
+  U394/Y (OR3X1_RVT)                       0.05       3.89 r
+  U865/Y (AND2X1_RVT)                      0.04       3.93 r
+  U395/Y (NOR2X2_RVT)                      0.06       3.99 f
+  U412/Y (OR2X2_RVT)                       0.10       4.09 f
+  U421/Y (AO21X2_RVT)                      0.11       4.20 f
+  U420/Y (AO21X2_RVT)                      0.11       4.31 f
+  U391/Y (AOI21X2_RVT)                     0.12       4.43 r
+  U867/Y (AO22X1_RVT)                      0.06       4.48 r
+  U423/Y (AOI21X2_RVT)                     0.06       4.54 f
+  U422/Y (OR2X2_RVT)                       0.11       4.65 f
+  U1133/Y (XNOR2X1_RVT)                    0.19       4.84 f
+  u_pc/pc_out_reg[30]/D (DFFARX1_RVT)      0.05       4.89 f
+  data arrival time                                   4.89
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  u_pc/pc_out_reg[30]/CLK (DFFARX1_RVT)
+                                           0.00       5.00 r
+  library setup time                      -0.03       4.97
+  data required time                                  4.97
+  -----------------------------------------------------------
+  data required time                                  4.97
+  data arrival time                                  -4.89
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+1

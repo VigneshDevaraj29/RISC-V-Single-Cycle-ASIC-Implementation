@@ -1,0 +1,95 @@
+PDP and PDAP Summary
+
+Formula:
+PDP  = Total Power × Clock Period
+PDAP = Total Power × Clock Period × Area
+
+Note:
+Power is in mW.
+Clock period is in ns.
+Area is in um².
+PDP unit = pJ.
+PDAP unit = pJ·um².
+
+
+SAED90nm Results
+
+1. Best Frequency Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+PDP: 19.1182 pJ
+PDAP: 1358062.968 pJ·um²
+
+2. Lowest Area Design
+Clock Period: 30 ns
+Frequency: 33.33 MHz
+Area: 68916.326929 um²
+Total Power: 1.0643 mW
+PDP: 31.9290 pJ
+PDAP: 2200429.403 pJ·um²
+
+3. 1.25x Area-Limited Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+PDP: 19.1182 pJ
+PDAP: 1358062.968 pJ·um²
+
+4. 1.50x Area-Limited Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+PDP: 19.1182 pJ
+PDAP: 1358062.968 pJ·um²
+
+
+SAED32nm Results
+
+1. Best Frequency Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW
+PDP: 2.5855 pJ
+PDAP: 43053.806 pJ·um²
+
+2. Lowest Area Design
+Clock Period: 30 ns
+Frequency: 33.33 MHz
+Area: 15151.303003 um²
+Total Power: 0.4085 mW
+PDP: 12.2550 pJ
+PDAP: 185679.218 pJ·um²
+
+3. 1.25x Area-Limited Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW
+PDP: 2.5855 pJ
+PDAP: 43053.806 pJ·um²
+
+4. 1.50x Area-Limited Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW
+PDP: 2.5855 pJ
+PDAP: 43053.806 pJ·um²
+
+
+Conclusion:
+The lowest PDP design is the SAED32nm 5 ns design.
+
+Lowest PDP:
+SAED32nm Best Frequency / Area-Limited Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+PDP: 2.5855 pJ
+
+The lowest PDAP design is also the SAED32nm 5 ns design.
+PDAP: 43053.806 pJ·um²

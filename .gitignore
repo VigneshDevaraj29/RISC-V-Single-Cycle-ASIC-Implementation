@@ -1,0 +1,36 @@
+# Synopsys / EDA generated working folders
+synth/
+pt/
+backend/
+sim/csrc/
+sim/simv*
+sim/*.daidir/
+sim/ucli.key
+sim/*.log
+sim/*.vpd
+sim/*.vcd
+
+# Technology/library files - do not push
+lib/
+*.db
+*.lib
+*.tf
+*.tluplus
+*.gds
+*.spef
+*.spef.max
+*.spef.min
+*.sdf
+*.ddc
+*.svf
+
+# Large/archive files
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# OS/editor
+.DS_Store
+*.swp
+*.tmp

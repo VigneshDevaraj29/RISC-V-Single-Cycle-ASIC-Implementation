@@ -1,0 +1,617 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:23:25 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[21][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U412/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[21][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[21][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[22][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U414/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[22][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[22][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[27][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U413/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[27][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[27][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[29][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U418/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[29][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[29][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[31][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U417/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[31][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[31][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[20][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U415/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[20][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[20][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[23][24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U609/Q (OA21X1)                                         0.52      11.81 r
+  U604/Q (OA21X1)                                         0.47      12.29 r
+  U694/QN (OAI21X1)                                       0.58      12.87 f
+  U713/Q (XNOR2X2)                                        0.69      13.56 r
+  U1309/Q (AO21X1)                                        0.48      14.04 r
+  U367/Q (MUX21X1)                                        0.67      14.70 r
+  u_regfile/write_data[24] (regfile)                      0.00      14.70 r
+  u_regfile/U641/Z (NBUFFX2)                              0.67      15.37 r
+  u_regfile/U416/Q (MUX21X1)                              1.19      16.56 r
+  u_regfile/registers_reg[23][24]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[23][24]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[18]
+              (input port clocked by clk)
+  Endpoint: u_pc/pc_out_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[18] (in)                      0.00       1.00 f
+  u_regfile/rs1[3] (regfile)               0.00       1.00 f
+  u_regfile/U575/QN (NOR2X0)               0.70       1.70 r
+  u_regfile/U439/QN (NAND2X0)              0.38       2.08 f
+  u_regfile/U958/QN (NOR2X0)               0.76       2.84 r
+  u_regfile/U959/Z (NBUFFX2)               0.94       3.78 r
+  u_regfile/U1356/Q (AO22X1)               0.83       4.61 r
+  u_regfile/U1358/QN (NOR4X0)              0.61       5.22 f
+  u_regfile/U1362/QN (NAND4X0)             0.58       5.80 r
+  u_regfile/read_data1[11] (regfile)       0.00       5.80 r
+  U820/ZN (INVX0)                          0.70       6.50 f
+  U821/QN (OAI22X1)                        0.51       7.01 r
+  U822/Q (AO221X1)                         0.63       7.65 r
+  U836/QN (NOR4X1)                         0.62       8.27 f
+  U564/Q (AND4X1)                          0.43       8.69 f
+  U563/Q (XNOR2X1)                         0.84       9.53 r
+  U376/Q (AND2X4)                          0.65      10.18 r
+  U377/Q (AND2X1)                          0.94      11.12 r
+  U662/QN (NAND2X0)                        0.45      11.57 f
+  U906/ZN (INVX0)                          0.47      12.04 r
+  U907/QN (AOI21X1)                        0.55      12.59 f
+  U908/QN (OAI21X1)                        0.46      13.05 r
+  U659/QN (AOI21X1)                        0.56      13.61 f
+  U913/Q (OA21X1)                          0.53      14.14 f
+  U401/QN (OAI21X1)                        0.67      14.81 r
+  U586/Q (AND2X1)                          0.50      15.31 r
+  U585/QN (AOI21X1)                        0.46      15.77 f
+  U678/Q (XOR2X1)                          0.76      16.54 r
+  u_pc/pc_out_reg[31]/D (DFFARX1)          0.30      16.83 r
+  data arrival time                                  16.83
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  u_pc/pc_out_reg[31]/CLK (DFFARX1)        0.00      17.00 r
+  library setup time                      -0.16      16.84
+  data required time                                 16.84
+  -----------------------------------------------------------
+  data required time                                 16.84
+  data arrival time                                 -16.83
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[17][31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U573/Q (OA21X1)                                         0.52      11.82 r
+  U605/Q (OA21X1)                                         0.53      12.35 r
+  U571/Q (OA21X1)                                         0.61      12.97 r
+  U570/Q (XNOR2X2)                                        0.67      13.64 r
+  U1339/Q (AO21X1)                                        0.48      14.12 r
+  U368/Q (MUX21X1)                                        0.67      14.79 r
+  u_regfile/write_data[31] (regfile)                      0.00      14.79 r
+  u_regfile/U394/Z (NBUFFX2)                              0.66      15.44 r
+  u_regfile/U2093/Q (MUX21X1)                             1.11      16.56 r
+  u_regfile/registers_reg[17][31]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[17][31]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: imem_rdata[20]
+              (input port clocked by clk)
+  Endpoint: u_regfile/registers_reg[24][31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_synth   140000                saed90nm_typ_ht
+  regfile            70000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  imem_rdata[20] (in)                                     0.00       1.00 r
+  u_regfile/rs2[0] (regfile)                              0.00       1.00 r
+  u_regfile/U2106/ZN (INVX0)                              0.62       1.62 f
+  u_regfile/U99/Q (OR2X1)                                 0.56       2.18 f
+  u_regfile/U2124/QN (NOR2X0)                             0.88       3.05 r
+  u_regfile/U2125/Z (NBUFFX2)                             0.57       3.63 r
+  u_regfile/U2129/Q (AO22X1)                              1.20       4.82 r
+  u_regfile/U2143/QN (NOR4X0)                             0.66       5.48 f
+  u_regfile/U2183/QN (NAND4X0)                            0.53       6.01 r
+  u_regfile/read_data2[0] (regfile)                       0.00       6.01 r
+  U1018/Q (AO21X1)                                        0.62       6.63 r
+  U1019/Q (XOR2X1)                                        1.14       7.77 f
+  U754/QN (NAND2X0)                                       0.45       8.22 r
+  U1020/QN (NAND2X0)                                      0.41       8.63 f
+  U636/Q (AO21X1)                                         0.59       9.21 f
+  U639/QN (AOI21X1)                                       0.61       9.82 r
+  U599/Q (OA21X1)                                         0.46      10.28 r
+  U598/QN (OAI21X1)                                       0.53      10.82 f
+  U611/QN (AOI21X1)                                       0.48      11.30 r
+  U573/Q (OA21X1)                                         0.52      11.82 r
+  U605/Q (OA21X1)                                         0.53      12.35 r
+  U571/Q (OA21X1)                                         0.61      12.97 r
+  U570/Q (XNOR2X2)                                        0.67      13.64 r
+  U1339/Q (AO21X1)                                        0.48      14.12 r
+  U368/Q (MUX21X1)                                        0.67      14.79 r
+  u_regfile/write_data[31] (regfile)                      0.00      14.79 r
+  u_regfile/U394/Z (NBUFFX2)                              0.66      15.44 r
+  u_regfile/U884/Q (MUX21X1)                              1.11      16.56 r
+  u_regfile/registers_reg[24][31]/D (DFFARX1)             0.27      16.83 r
+  data arrival time                                                 16.83
+
+  clock clk (rise edge)                                  17.00      17.00
+  clock network delay (ideal)                             0.00      17.00
+  u_regfile/registers_reg[24][31]/CLK (DFFARX1)           0.00      17.00 r
+  library setup time                                     -0.17      16.83
+  data required time                                                16.83
+  --------------------------------------------------------------------------
+  data required time                                                16.83
+  data arrival time                                                -16.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

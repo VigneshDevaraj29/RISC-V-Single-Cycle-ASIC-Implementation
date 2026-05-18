@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : riscv_core_synth
+Version: Q-2019.12-SP5
+Date   : Wed May  6 17:31:40 2026
+****************************************
+
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   riscv_core_synth             0.00       79504.48       -79504.48 (VIOLATED)
+
+
+1

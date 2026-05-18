@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : hierarchy
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:49:16 2026
+****************************************
+
+Attributes:
+    r - licensed design
+
+riscv_core_synth   r
+    AND2X1_RVT               saed32rvt_tt1p05v25c
+    AND2X2_RVT               saed32rvt_tt1p05v25c
+    AND3X1_RVT               saed32rvt_tt1p05v25c
+    AND3X2_RVT               saed32rvt_tt1p05v25c
+    AO21X1_RVT               saed32rvt_tt1p05v25c
+    AO21X2_RVT               saed32rvt_tt1p05v25c
+    AO22X1_RVT               saed32rvt_tt1p05v25c
+    AO22X2_RVT               saed32rvt_tt1p05v25c
+    AOI21X1_RVT              saed32rvt_tt1p05v25c
+    AOI21X2_RVT              saed32rvt_tt1p05v25c
+    AOI22X1_RVT              saed32rvt_tt1p05v25c
+    DFFARX1_RVT              saed32rvt_tt1p05v25c
+    FADDX1_RVT               saed32rvt_tt1p05v25c
+    FADDX2_RVT               saed32rvt_tt1p05v25c
+    IBUFFX4_RVT              saed32rvt_tt1p05v25c
+    IBUFFX16_RVT             saed32rvt_tt1p05v25c
+    INVX0_RVT                saed32rvt_tt1p05v25c
+    INVX1_RVT                saed32rvt_tt1p05v25c
+    MUX21X1_RVT              saed32rvt_tt1p05v25c
+    NAND2X0_RVT              saed32rvt_tt1p05v25c
+    NAND2X2_RVT              saed32rvt_tt1p05v25c
+    NAND4X0_RVT              saed32rvt_tt1p05v25c
+    NBUFFX2_RVT              saed32rvt_tt1p05v25c
+    NBUFFX4_RVT              saed32rvt_tt1p05v25c
+    NBUFFX16_RVT             saed32rvt_tt1p05v25c
+    NOR2X0_RVT               saed32rvt_tt1p05v25c
+    NOR2X2_RVT               saed32rvt_tt1p05v25c
+    NOR3X0_RVT               saed32rvt_tt1p05v25c
+    NOR4X1_RVT               saed32rvt_tt1p05v25c
+    OA21X1_RVT               saed32rvt_tt1p05v25c
+    OA21X2_RVT               saed32rvt_tt1p05v25c
+    OA22X1_RVT               saed32rvt_tt1p05v25c
+    OA221X1_RVT              saed32rvt_tt1p05v25c
+    OAI21X1_RVT              saed32rvt_tt1p05v25c
+    OAI21X2_RVT              saed32rvt_tt1p05v25c
+    OAI22X1_RVT              saed32rvt_tt1p05v25c
+    OAI22X2_RVT              saed32rvt_tt1p05v25c
+    OR2X1_RVT                saed32rvt_tt1p05v25c
+    OR2X2_RVT                saed32rvt_tt1p05v25c
+    OR2X4_RVT                saed32rvt_tt1p05v25c
+    OR3X1_RVT                saed32rvt_tt1p05v25c
+    OR3X2_RVT                saed32rvt_tt1p05v25c
+    XNOR2X1_RVT              saed32rvt_tt1p05v25c
+    XNOR3X1_RVT              saed32rvt_tt1p05v25c
+    XNOR3X2_RVT              saed32rvt_tt1p05v25c
+    XOR2X1_RVT               saed32rvt_tt1p05v25c
+    XOR3X1_RVT               saed32rvt_tt1p05v25c
+    XOR3X2_RVT               saed32rvt_tt1p05v25c
+    regfile
+        AND2X1_RVT           saed32rvt_tt1p05v25c
+        AND2X2_RVT           saed32rvt_tt1p05v25c
+        AND2X4_RVT           saed32rvt_tt1p05v25c
+        AND3X1_RVT           saed32rvt_tt1p05v25c
+        AND3X2_RVT           saed32rvt_tt1p05v25c
+        AND4X1_RVT           saed32rvt_tt1p05v25c
+        AND4X4_RVT           saed32rvt_tt1p05v25c
+        AO22X1_RVT           saed32rvt_tt1p05v25c
+        AOI22X1_RVT          saed32rvt_tt1p05v25c
+        DFFARX1_RVT          saed32rvt_tt1p05v25c
+        DFFASX1_RVT          saed32rvt_tt1p05v25c
+        IBUFFX4_RVT          saed32rvt_tt1p05v25c
+        IBUFFX8_RVT          saed32rvt_tt1p05v25c
+        INVX0_RVT            saed32rvt_tt1p05v25c
+        INVX1_RVT            saed32rvt_tt1p05v25c
+        NAND2X0_RVT          saed32rvt_tt1p05v25c
+        NAND4X0_RVT          saed32rvt_tt1p05v25c
+        NAND4X1_RVT          saed32rvt_tt1p05v25c
+        NBUFFX2_RVT          saed32rvt_tt1p05v25c
+        NBUFFX4_RVT          saed32rvt_tt1p05v25c
+        NBUFFX8_RVT          saed32rvt_tt1p05v25c
+        NBUFFX16_RVT         saed32rvt_tt1p05v25c
+        NOR2X0_RVT           saed32rvt_tt1p05v25c
+        NOR2X2_RVT           saed32rvt_tt1p05v25c
+        NOR2X4_RVT           saed32rvt_tt1p05v25c
+        NOR3X0_RVT           saed32rvt_tt1p05v25c
+        NOR3X2_RVT           saed32rvt_tt1p05v25c
+        NOR4X1_RVT           saed32rvt_tt1p05v25c
+        OA22X1_RVT           saed32rvt_tt1p05v25c
+        OAI22X1_RVT          saed32rvt_tt1p05v25c
+        OR3X2_RVT            saed32rvt_tt1p05v25c
+1

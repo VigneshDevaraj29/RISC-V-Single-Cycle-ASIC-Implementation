@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : riscv_core_synth
+Version: Q-2019.12-SP5
+Date   : Wed May  6 17:30:52 2026
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/vdevaraj/Projects/RISC_v_single_cycle/lib/saed90_phys/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          164
+Number of nets:                          1149
+Number of cells:                         1012
+Number of combinational cells:            980
+Number of sequential cells:                31
+Number of macros/black boxes:               0
+Number of buf/inv:                        182
+Number of references:                      32
+
+Combinational area:              38037.196790
+Buf/Inv area:                     3079.987280
+Noncombinational area:           32997.888531
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8194.837556
+
+Total cell area:                 71035.085320
+Total area:                      79229.922877
+1

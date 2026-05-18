@@ -1,0 +1,12 @@
+****************************************
+Report : global_timing
+	-format { narrow }
+Design : riscv_core_synth
+Version: Q-2019.12-SP5
+Date   : Tue May  5 23:30:12 2026
+****************************************
+
+No setup violations found.
+
+No hold violations found.
+1

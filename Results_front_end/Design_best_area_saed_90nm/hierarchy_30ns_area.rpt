@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : hierarchy
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:14:27 2026
+****************************************
+
+Attributes:
+    r - licensed design
+
+riscv_core_synth   r
+    AND2X1              saed90nm_typ_ht
+    AND3X1              saed90nm_typ_ht
+    AND4X1              saed90nm_typ_ht
+    AO21X1              saed90nm_typ_ht
+    AO22X1              saed90nm_typ_ht
+    AO221X1             saed90nm_typ_ht
+    AOI21X1             saed90nm_typ_ht
+    DFFARX1             saed90nm_typ_ht
+    FADDX1              saed90nm_typ_ht
+    INVX0               saed90nm_typ_ht
+    MUX21X1             saed90nm_typ_ht
+    NAND2X0             saed90nm_typ_ht
+    NAND3X0             saed90nm_typ_ht
+    NAND4X0             saed90nm_typ_ht
+    NBUFFX2             saed90nm_typ_ht
+    NOR2X0              saed90nm_typ_ht
+    NOR2X1              saed90nm_typ_ht
+    NOR4X0              saed90nm_typ_ht
+    OA22X1              saed90nm_typ_ht
+    OAI21X1             saed90nm_typ_ht
+    OAI22X1             saed90nm_typ_ht
+    OR2X1               saed90nm_typ_ht
+    OR3X1               saed90nm_typ_ht
+    XNOR2X1             saed90nm_typ_ht
+    XOR2X1              saed90nm_typ_ht
+    XOR3X1              saed90nm_typ_ht
+    regfile
+        AND2X1          saed90nm_typ_ht
+        AND3X1          saed90nm_typ_ht
+        AO21X1          saed90nm_typ_ht
+        AO22X1          saed90nm_typ_ht
+        DFFARX1         saed90nm_typ_ht
+        INVX0           saed90nm_typ_ht
+        INVX2           saed90nm_typ_ht
+        MUX21X1         saed90nm_typ_ht
+        NAND2X0         saed90nm_typ_ht
+        NAND2X1         saed90nm_typ_ht
+        NAND3X0         saed90nm_typ_ht
+        NAND4X0         saed90nm_typ_ht
+        NBUFFX2         saed90nm_typ_ht
+        NOR2X0          saed90nm_typ_ht
+        NOR3X0          saed90nm_typ_ht
+        NOR4X0          saed90nm_typ_ht
+        OR2X1           saed90nm_typ_ht
+1

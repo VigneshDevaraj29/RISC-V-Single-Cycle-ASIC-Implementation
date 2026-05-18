@@ -1,0 +1,4 @@
+Wire Load Note:
+The design was synthesized using the SAED standard-cell libraries in Synopsys Design Compiler.
+Timing paths, critical path delay, and interconnect-related estimates are reported in the timing and QoR reports.
+For the SAED90nm highest-frequency design, physical routing/parasitic information was further generated using IC Compiler and SPEF output.

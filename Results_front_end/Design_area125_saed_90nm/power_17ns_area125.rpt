@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:18:36 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/vdevaraj/Projects/RISC_v_single_cycle/lib/saed/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_core_synth       140000            saed90nm_typ_ht
+regfile                70000             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  20.4094 uW   (43%)
+  Net Switching Power  =  26.9844 uW   (57%)
+                         ---------
+Total Dynamic Power    =  47.3938 uW  (100%)
+
+Cell Leakage Power     =   1.0772 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  7.2680e-02            0.0000            0.0000        7.2680e-02  (   0.01%)  i
+register       -7.1709e-02            0.2308        3.7369e+08          373.8477 (  33.24%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     20.4084           26.7536        7.0348e+08          750.6420  (  66.75%)
+--------------------------------------------------------------------------------------------------
+Total             20.4094 uW        26.9843 uW     1.0772e+09 pW     1.1246e+03 uW
+1

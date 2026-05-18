@@ -1,0 +1,59 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP2-2_Full64; Runtime version T-2022.06-SP2-2_Full64;  May  5 01:23 2026
+Cycle 1 | PC = 00000000 | Instr = 00500093
+Cycle 2 | PC = 00000004 | Instr = 00a00113
+Cycle 3 | PC = 00000008 | Instr = 002081b3
+Cycle 4 | PC = 0000000c | Instr = 40110233
+Cycle 5 | PC = 00000010 | Instr = 0020f2b3
+Cycle 6 | PC = 00000014 | Instr = 0020e333
+Cycle 7 | PC = 00000018 | Instr = 0020c3b3
+Cycle 8 | PC = 0000001c | Instr = 00f08413
+Cycle 9 | PC = 00000020 | Instr = 00f47493
+Cycle 10 | PC = 00000024 | Instr = 00a0e513
+Cycle 11 | PC = 00000028 | Instr = 00302023
+Cycle 12 | PC = 0000002c | Instr = 00002583
+Cycle 13 | PC = 00000030 | Instr = 00358463
+Cycle 14 | PC = 00000038 | Instr = 00259463
+Cycle 15 | PC = 00000040 | Instr = 00700713
+Cycle 16 | PC = 00000044 | Instr = xxxxxxxx
+Cycle 17 | PC = 00000048 | Instr = xxxxxxxx
+Cycle 18 | PC = 0000004c | Instr = xxxxxxxx
+Cycle 19 | PC = 00000050 | Instr = xxxxxxxx
+Cycle 20 | PC = 00000054 | Instr = xxxxxxxx
+Cycle 21 | PC = 00000058 | Instr = xxxxxxxx
+Cycle 22 | PC = 0000005c | Instr = xxxxxxxx
+Cycle 23 | PC = 00000060 | Instr = xxxxxxxx
+Cycle 24 | PC = 00000064 | Instr = xxxxxxxx
+Cycle 25 | PC = 00000068 | Instr = xxxxxxxx
+Cycle 26 | PC = 0000006c | Instr = xxxxxxxx
+Cycle 27 | PC = 00000070 | Instr = xxxxxxxx
+Cycle 28 | PC = 00000074 | Instr = xxxxxxxx
+Cycle 29 | PC = 00000078 | Instr = xxxxxxxx
+Cycle 30 | PC = 0000007c | Instr = xxxxxxxx
+====================================
+RISC-V Single-Cycle Processor Test
+====================================
+x1  = 5
+x2  = 10
+x3  = 15
+x4  = 5
+x5  = 0
+x6  = 15
+x7  = 15
+x8  = 20
+x9  = 4
+x10 = 15
+x11 = 15
+x12 = 0
+x13 = 0
+x14 = 7
+data_mem[0] = 15
+TEST PASSED
+====================================
+$finish called from file "../tb/tb_riscv_core.v", line 74.
+$finish at simulation time                  320
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 320
+CPU Time:      0.280 seconds;       Data structure size:   0.0Mb
+Tue May  5 01:23:13 2026

@@ -1,0 +1,52 @@
+Final Front-End Synthesis Summary
+
+SAED90nm Results
+1. Best Frequency Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+
+2. Lowest Area Design
+Clock Period: 30 ns
+Frequency: 33.33 MHz
+Area: 68916.326929 um²
+Total Power: 1.0643 mW
+
+3. 1.25x Area-Limited Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+
+4. 1.50x Area-Limited Design
+Clock Period: 17 ns
+Frequency: 58.82 MHz
+Area: 71035.085320 um²
+Total Power: 1.1246 mW
+
+
+SAED32nm Results
+1. Best Frequency Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW
+
+2. Lowest Area Design
+Clock Period: 30 ns
+Frequency: 33.33 MHz
+Area: 15151.303003 um²
+Total Power: 0.4085 mW
+
+3. 1.25x Area-Limited Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW
+
+4. 1.50x Area-Limited Design
+Clock Period: 5 ns
+Frequency: 200 MHz
+Area: 16652.023320 um²
+Total Power: 0.5171 mW

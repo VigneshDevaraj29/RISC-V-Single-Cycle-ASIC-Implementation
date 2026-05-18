@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:14:27 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              42.00
+  Critical Path Length:         27.05
+  Critical Path Slack:           1.79
+  Critical Path Clk Period:     30.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        114
+  Leaf Cell Count:               4643
+  Buf/Inv Cell Count:             402
+  Buf Cell Count:                 232
+  Inv Cell Count:                 170
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3620
+  Sequential Cell Count:         1023
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    35918.438398
+  Noncombinational Area: 32997.888531
+  Buf/Inv Area:           2224.742457
+  Total Buffer Area:          1282.87
+  Total Inverter Area:         941.88
+  Macro/Black Box Area:      0.000000
+  Net Area:               7112.925950
+  -----------------------------------
+  Cell Area:             68916.326929
+  Design Area:           76029.252879
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4732
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: zeus-2.cec.gmu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.69
+  Logic Optimization:                  2.78
+  Mapping Optimization:               10.82
+  -----------------------------------------
+  Overall Compile Time:               25.49
+  Overall Compile Wall Clock Time:    25.96
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,501 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core_synth
+Version: Q-2019.12-SP5
+Date   : Wed May  6 17:31:40 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays = 33.99%
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U573/Q (OA21X1)                          0.15 &     4.28 f
+  U608/Q (OA21X1)                          0.18 &     4.47 f
+  U693/QN (OAI21X1)                        0.19 &     4.66 r
+  U420/Q (XNOR2X1)                         0.22 &     4.88 r
+  U418/QN (NAND2X0)                        0.08 &     4.96 f
+  U697/QN (NAND2X0)                        0.28 &     5.24 r
+  dmem_addr[29] (out)                      0.00 &     5.24 r
+  data arrival time                                   5.24
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.24
+  -----------------------------------------------------------
+  slack (MET)                                        10.76
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[25]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U573/Q (OA21X1)                          0.15 &     4.28 f
+  U608/Q (OA21X1)                          0.18 &     4.47 f
+  U433/QN (OAI21X1)                        0.19 &     4.66 r
+  U360/Q (XNOR2X1)                         0.19 &     4.85 r
+  U1313/Q (AO21X1)                         0.27 &     5.11 r
+  dmem_addr[25] (out)                      0.01 &     5.12 r
+  data arrival time                                   5.12
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.12
+  -----------------------------------------------------------
+  slack (MET)                                        10.88
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[26]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U573/Q (OA21X1)                          0.15 &     4.28 f
+  U605/Q (OA21X1)                          0.18 &     4.46 f
+  U429/QN (OAI21X1)                        0.19 &     4.65 r
+  U419/Q (XNOR2X1)                         0.18 &     4.84 r
+  U1318/Q (AO21X1)                         0.26 &     5.09 r
+  dmem_addr[26] (out)                      0.01 &     5.10 r
+  data arrival time                                   5.10
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.10
+  -----------------------------------------------------------
+  slack (MET)                                        10.90
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[27]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U573/Q (OA21X1)                          0.15 &     4.28 f
+  U605/Q (OA21X1)                          0.18 &     4.46 f
+  U425/QN (OAI21X1)                        0.19 &     4.65 r
+  U421/Q (XNOR2X1)                         0.18 &     4.84 r
+  U1323/Q (AO21X1)                         0.25 &     5.09 r
+  dmem_addr[27] (out)                      0.01 &     5.09 r
+  data arrival time                                   5.09
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.09
+  -----------------------------------------------------------
+  slack (MET)                                        10.91
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[28]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U573/Q (OA21X1)                          0.15 &     4.28 f
+  U605/Q (OA21X1)                          0.18 &     4.46 f
+  U435/QN (OAI21X1)                        0.19 &     4.66 r
+  U373/Q (XNOR2X1)                         0.19 &     4.84 r
+  U1329/Q (AO21X1)                         0.24 &     5.08 r
+  dmem_addr[28] (out)                      0.00 &     5.09 r
+  data arrival time                                   5.09
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.09
+  -----------------------------------------------------------
+  slack (MET)                                        10.91
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U609/Q (OA21X1)                          0.14 &     4.28 f
+  U604/Q (OA21X1)                          0.16 &     4.44 f
+  U694/QN (OAI21X1)                        0.18 &     4.62 r
+  U713/Q (XNOR2X1)                         0.19 &     4.81 r
+  U1309/Q (AO21X1)                         0.26 &     5.07 r
+  dmem_addr[24] (out)                      0.01 &     5.07 r
+  data arrival time                                   5.07
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.07
+  -----------------------------------------------------------
+  slack (MET)                                        10.93
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[22]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U609/Q (OA21X1)                          0.14 &     4.28 f
+  U604/Q (OA21X1)                          0.16 &     4.44 f
+  U695/QN (OAI21X1)                        0.18 &     4.62 r
+  U423/Q (XNOR2X1)                         0.18 &     4.80 r
+  U1300/Q (AO21X1)                         0.26 &     5.06 r
+  dmem_addr[22] (out)                      0.01 &     5.07 r
+  data arrival time                                   5.07
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.07
+  -----------------------------------------------------------
+  slack (MET)                                        10.93
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U684/Q (OR2X1)                           0.15 @     3.09 r
+  U754/QN (NAND2X0)                        0.05 &     3.14 f
+  U1020/QN (NAND2X0)                       0.10 &     3.24 r
+  U636/Q (AO21X1)                          0.20 &     3.44 r
+  U639/QN (AOI21X1)                        0.18 &     3.61 f
+  U599/Q (OA21X1)                          0.16 &     3.78 f
+  U598/QN (OAI21X1)                        0.20 &     3.98 r
+  U611/QN (AOI21X1)                        0.16 &     4.14 f
+  U609/Q (OA21X1)                          0.14 &     4.28 f
+  U604/Q (OA21X1)                          0.16 &     4.44 f
+  U692/QN (OAI21X1)                        0.18 &     4.62 r
+  U424/Q (XNOR2X1)                         0.18 &     4.80 r
+  U1304/Q (AO21X1)                         0.25 &     5.06 r
+  dmem_addr[23] (out)                      0.01 &     5.06 r
+  data arrival time                                   5.06
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.06
+  -----------------------------------------------------------
+  slack (MET)                                        10.94
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U641/Q (XOR2X1)                          0.20 @     3.14 f
+  U638/QN (NAND2X0)                        0.13 &     3.27 r
+  U1021/QN (OAI21X1)                       0.21 &     3.48 f
+  U639/QN (AOI21X1)                        0.14 &     3.63 r
+  U599/Q (OA21X1)                          0.16 &     3.79 r
+  U598/QN (OAI21X1)                        0.17 &     3.96 f
+  U611/QN (AOI21X1)                        0.19 &     4.16 r
+  U573/Q (OA21X1)                          0.14 &     4.29 r
+  U605/Q (OA21X1)                          0.18 &     4.47 r
+  U571/Q (OA21X1)                          0.15 &     4.62 r
+  U570/Q (XNOR2X1)                         0.19 &     4.80 r
+  U1339/Q (AO21X1)                         0.23 &     5.03 r
+  dmem_addr[31] (out)                      0.00 &     5.04 r
+  data arrival time                                   5.04
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.04
+  -----------------------------------------------------------
+  slack (MET)                                        10.96
+
+
+  Startpoint: imem_rdata[31]
+              (input port clocked by clk)
+  Endpoint: dmem_addr[30]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  imem_rdata[31] (in)                      0.00 @     1.00 f
+  U769/ZN (INVX0)                          0.19 @     1.19 r
+  U973/Q (AND4X1)                          0.19 &     1.39 r
+  U691/Q (AND2X1)                          0.11 &     1.50 r
+  U690/Q (AND2X1)                          0.09 &     1.59 r
+  U980/Q (AO21X1)                          0.09 &     1.68 r
+  U981/Q (AND4X1)                          0.53 @     2.21 r
+  U985/Q (OA221X1)                         0.30 @     2.51 r
+  U552/Q (OR2X1)                           0.43 @     2.94 r
+  U641/Q (XOR2X1)                          0.20 @     3.14 f
+  U638/QN (NAND2X0)                        0.13 &     3.27 r
+  U1021/QN (OAI21X1)                       0.21 &     3.48 f
+  U639/QN (AOI21X1)                        0.14 &     3.63 r
+  U599/Q (OA21X1)                          0.16 &     3.79 r
+  U598/QN (OAI21X1)                        0.17 &     3.96 f
+  U611/QN (AOI21X1)                        0.19 &     4.16 r
+  U573/Q (OA21X1)                          0.14 &     4.29 r
+  U608/Q (OA21X1)                          0.19 &     4.48 r
+  U567/Q (OA21X1)                          0.14 &     4.62 r
+  U566/Q (XNOR2X1)                         0.19 &     4.81 r
+  U1066/Q (AO21X1)                         0.22 &     5.03 r
+  dmem_addr[30] (out)                      0.00 &     5.04 r
+  data arrival time                                   5.04
+
+  clock clk (rise edge)                   17.00      17.00
+  clock network delay (ideal)              0.00      17.00
+  output external delay                   -1.00      16.00
+  data required time                                 16.00
+  -----------------------------------------------------------
+  data required time                                 16.00
+  data arrival time                                  -5.04
+  -----------------------------------------------------------
+  slack (MET)                                        10.96
+
+
+1

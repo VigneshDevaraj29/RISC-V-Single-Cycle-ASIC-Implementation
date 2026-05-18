@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : riscv_core_synth
+Version: V-2023.12-SP4
+Date   : Tue May  5 16:14:27 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core_synth' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/vdevaraj/Projects/RISC_v_single_cycle/lib/saed/saed90nm_typ_ht.db)
+
+Number of ports:                          278
+Number of nets:                          4846
+Number of cells:                         4645
+Number of combinational cells:           3620
+Number of sequential cells:              1023
+Number of macros/black boxes:               0
+Number of buf/inv:                        402
+Number of references:                      27
+
+Combinational area:              35918.438398
+Buf/Inv area:                     2224.742457
+Noncombinational area:           32997.888531
+Macro/Black Box area:                0.000000
+Net Interconnect area:            7112.925950
+
+Total cell area:                 68916.326929
+Total area:                      76029.252879
+1

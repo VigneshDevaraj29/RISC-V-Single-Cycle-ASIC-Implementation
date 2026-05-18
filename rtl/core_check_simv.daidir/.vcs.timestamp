@@ -1,0 +1,129 @@
+0
+31
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/cec/synopsys/vcs/T-2022.06-SP2-2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libvirsim.so /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/liberrorinf.so /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libsnpsmalloc.so /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libvfs.so
+-Mout=core_check_simv
+-Msaverestoreobj=/opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/cec/synopsys/vcs/T-2022.06-SP2-2/include
+-Mxllcflags=
+-full64
+-gen_obj
+-o core_check_simv
+-picarchive
+-sverilog
+/opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/bin/vcs1
+core_check_simv
+pc.v
+regfile.v
+alu.v
+control_unit.v
+imm_gen.v
+branch_comp.v
+riscv_core.v
+78
+which_declare=declare -f
+__LMOD_REF_COUNT_PATH=/home/vdevaraj/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1;/home/vdevaraj/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:1;/home/vdevaraj/.vscode-server/cli/servers/Stable-034f571df509819cc10b0c8129f66ef77a542f0e/server/bin/remote-cli:1;/opt/cec/opt/matlab/2024a/bin:1;/opt/cec/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/dell/srvadmin/bin:1;/opt/cec/oracle/instantclient_18_5:1;/opt/cec/synopsys/vcs/T-2022.06-SP2-2/bin:1
+__LMOD_REF_COUNT_MODULEPATH=/opt/cec/synopsys/modulefiles:1;/etc/scl/modulefiles:1;/opt/cec/share/Modulefiles:1;/etc/modulefiles:1;/usr/share/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cec/oracle/instantclient_18_5:1
+__LMOD_REF_COUNT_CLASSPATH=.:1;/opt/cec/oracle/instantclient_18_5/lib/ojdbc8.jar:1
+__Init_Default_Modules=1
+_ModuleTable_Sz_=5
+_ModuleTable005_=Yy9zY2wvbW9kdWxlZmlsZXM6L29wdC9jZWMvc2hhcmUvTW9kdWxlZmlsZXM6L2V0Yy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+_ModuleTable004_=ICJ2Y3MvVC0yMDIyLjA2LVNQMi0yIiwKd1YgPSAiKnQuKnpmaW5hbC0uMDAwMDAyMDIyLjAwMDAwMDAwNi4qc3AuMDAwMDAwMDAyLip6ZmluYWwtLjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKfSwKbXBhdGhBID0gewoiL29wdC9jZWMvc3lub3BzeXMvbW9kdWxlZmlsZXMiLCAiL2V0Yy9zY2wvbW9kdWxlZmlsZXMiLCAiL29wdC9jZWMvc2hhcmUvTW9kdWxlZmlsZXMiLCAiL2V0Yy9tb2R1bGVmaWxlcyIsICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL2V0
+_ModuleTable003_=Yy9zeW5vcHN5cy9tb2R1bGVmaWxlcyIpXV0sCn0sCmZuID0gIi9vcHQvY2VjL3NoYXJlL01vZHVsZWZpbGVzL3N5bm9wc3lzLmx1YSIsCmZ1bGxOYW1lID0gInN5bm9wc3lzIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzeW5vcHN5cyIsCndWID0gIk0uKnpmaW5hbCIsCn0sCnZjcyA9IHsKZm4gPSAiL29wdC9jZWMvc3lub3BzeXMvbW9kdWxlZmlsZXMvdmNzL1QtMjAyMi4wNi1TUDItMi5sdWEiLApmdWxsTmFtZSA9ICJ2Y3MvVC0yMDIyLjA2LVNQMi0yIiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9
+_ModuleTable002_=YWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAxLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibWF0bGFiIiwKd1YgPSAiXjAwMDAyMDI0LiphLip6ZmluYWwiLAp9LApvcmFjbGUgPSB7CmZuID0gIi9vcHQvY2VjL3NoYXJlL01vZHVsZWZpbGVzL29yYWNsZS8xOC41Lmx1YSIsCmZ1bGxOYW1lID0gIm9yYWNsZS8xOC41IiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJvcmFjbGUiLAp3ViA9ICJeMDAwMDAwMTguMDAwMDAwMDA1Lip6ZmluYWwiLAp9LApzeW5vcHN5cyA9IHsKYWN0aW9uQSA9IHsKW1twcmVwZW5kX3BhdGgoIk1PRFVMRVBBVEgiLCIvb3B0L2Nl
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpTdGRFbnYgPSB7CmZuID0gIi9vcHQvY2VjL3NoYXJlL01vZHVsZWZpbGVzL1N0ZEVudi5sdWEiLApmdWxsTmFtZSA9ICJTdGRFbnYiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIlN0ZEVudiIsCndWID0gIk0uKnpmaW5hbCIsCn0sCm1hdGxhYiA9IHsKZm4gPSAiL29wdC9jZWMvc2hhcmUvTW9kdWxlZmlsZXMvbWF0bGFiLzIwMjRhLmx1YSIsCmZ1bGxOYW1lID0gIm1hdGxhYi8yMDI0YSIsCmxv
+_LMFILES_=/opt/cec/share/Modulefiles/oracle/18.5.lua:/opt/cec/share/Modulefiles/matlab/2024a.lua:/opt/cec/share/Modulefiles/StdEnv.lua:/opt/cec/share/Modulefiles/synopsys.lua:/opt/cec/synopsys/modulefiles/vcs/T-2022.06-SP2-2.lua
+XDG_SESSION_ID=1282
+XDG_RUNTIME_DIR=/run/user/663315
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+VSCODE_IPC_HOOK_CLI=/run/user/663315/vscode-ipc-80b144d9-c1d0-4ae2-a56a-cd2d7ac87bc2.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/663315/vscode-git-fce517cba4.sock
+VSCODE_GIT_ASKPASS_NODE=/home/vdevaraj/.vscode-server/cli/servers/Stable-034f571df509819cc10b0c8129f66ef77a542f0e/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/vdevaraj/.vscode-server/cli/servers/Stable-034f571df509819cc10b0c8129f66ef77a542f0e/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/opt/cec/synopsys/vcs/T-2022.06-SP2-2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TWO_TASK=//artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu
+TOOL_HOME=/opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64
+TERM_PROGRAM_VERSION=1.118.1
+TERM_PROGRAM=vscode
+S_COLORS=auto
+SYNOPSYS=/opt/cec/synopsys
+SSH_CONNECTION=10.172.3.110 64205 10.192.126.72 22
+SSH_CLIENT=10.172.3.110 64205 22
+SNPS_VCS_CLANG_PATH=/opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PYTHONPATH=/opt/cec/python/3.6/lib/python3.6/site-packages
+OVA_UUM=0
+OS_LDFLAGS=
+ORACLE_SID=vse18c.vsnet.gmu.edu
+ORACLE_HOME=/opt/cec/oracle/instantclient_18_5/lib
+MODULESHOME=/usr/share/Modules
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULEPATH=/opt/cec/synopsys/modulefiles:/etc/scl/modulefiles:/opt/cec/share/Modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+MLM_LICENSE_FILE=27001@matlab.vse.gmu.edu
+LOADEDMODULES=oracle/18.5:matlab/2024a:StdEnv:synopsys:vcs/T-2022.06-SP2-2
+LMOD_sys=Linux
+LMOD_VERSION=8.7.65
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_ROOT=/usr/share/lmod
+LMOD_PKG=/usr/share/lmod/lmod
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=KCM:
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/home/vdevaraj/.vscode-server/cli/servers/Stable-034f571df509819cc10b0c8129f66ef77a542f0e/server/extensions/git/dist/askpass.sh
+FPATH=/usr/share/lmod/lmod/init/ksh_funcs
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/663315/bus
+COLORTERM=truecolor
+CLASSPATH=.:/opt/cec/oracle/instantclient_18_5/lib/ojdbc8.jar
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then_ case "$-" in _ *v*x*)_ __lmod_sh_dbg='vx'_ ;;_ *v*)_ __lmod_sh_dbg='v'_ ;;_ *x*)_ __lmod_sh_dbg='x'_ ;;_ esac;_ fi;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ set +$__lmod_sh_dbg;_ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;_ fi;_ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";_ __lmod_my_status=$?;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ echo "Shell debugging restarted" 1>&2;_ set -$__lmod_sh_dbg;_ fi;_ unset __lmod_sh_dbg;_ return $__lmod_my_status_}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"_}
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+0
+0
+7
+1777958118 riscv_core.v
+1777957828 branch_comp.v
+1777957836 imm_gen.v
+1777957847 control_unit.v
+1777957812 alu.v
+1777957803 regfile.v
+1777957788 pc.v
+4
+1678851181 /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libvirsim.so
+1678850480 /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/liberrorinf.so
+1678850417 /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libsnpsmalloc.so
+1678850477 /opt/cec/synopsys/vcs/T-2022.06-SP2-2/linux64/lib/libvfs.so
+1777958135 core_check_simv.daidir
+-1 partitionlib
