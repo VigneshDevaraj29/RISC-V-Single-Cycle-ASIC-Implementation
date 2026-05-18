@@ -37,6 +37,16 @@ Major modules include:
 
 The processor supports arithmetic, logical, memory access, and control-flow operations.
 
+## Core Schematic
+
+Top-level synthesized schematic of the RISC-V processor core:
+
+![Top-Level Core Schematic](docs/schematic_core.png.png)
+
+Internal synthesized schematic view:
+
+![Internal Core Schematic](docs/schematic_core_internal.png.png)
+
 ## ASIC Design Flow
 
 The project follows the standard ASIC design flow:
@@ -63,6 +73,12 @@ SPEF / GDS / LVS Analysis
 - Synopsys IC Compiler
 - SAED90nm standard-cell library
 - SAED32nm standard-cell library
+
+## RTL Simulation Output
+
+The RTL simulation was performed using Synopsys VCS. The simulation verified correct instruction execution before synthesis.
+
+![RTL Simulation Output](docs/simulation_output_vcs.png.png)
 
 ## Front-End Results
 
@@ -126,6 +142,18 @@ Backend flow completed:
 | Leakage Power | 1.0242 mW |
 | GDS File Size | 4.9 MB |
 | LVS Errors | 43 total |
+
+## Final Layout
+
+Final post-route layout generated using Synopsys IC Compiler for the SAED90nm highest-frequency design.
+
+![Final ICC Layout](docs/layout_final_icc.png.png)
+
+## LVS Error Analysis
+
+LVS was run after routing in IC Compiler. The LVS error browser reported 43 total errors.
+
+![LVS Error Output](docs/lvs_errors_icc.png.png)
 
 ## Generated Outputs
 
